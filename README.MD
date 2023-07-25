@@ -45,23 +45,27 @@ https://divvy-tripdata.s3.amazonaws.com/index.html
 
 To ensure the data is clean and ready for analysis, the following data cleaning steps were performed on each .csv file in Excel:
 
-1. **Remove Duplicates:** Checked for and removed any duplicate rows to avoid counting the same ride multiple times.
+1. **Remove Duplicates:** Checked for and removed any duplicate rows.
 
-2. **Remove Invalid ride_id:** Filtered out rows where the `ride_id` is less than 16 characters long, as these are likely to be invalid or incomplete entries.
+2. **Remove Invalid ride_id:** Filtered out rows where the `ride_id` is less than 16 characters long, as these are likely to be invalid or incomplete entries and then sort at form A-Z and check it.
 
-3. **Trim Spaces:** Used the `trim()` function to remove any leading or trailing spaces in the data, ensuring consistent formatting.
+3. **Calculate Ride Length:** Created a new column labeled `ride_length` by calculating the duration of each ride. This was done by subtracting the `started_at` timestamp from the `ended_at` timestamp, representing the duration of the ride in hours, minutes.
+4. **Time Format Adjustment:** Changed the time format in the `ride_length` column to `37:30:55` to make it more readable, displaying hours, minutes, and seconds.
 
-4. **Create Day of the Week:** Utilized the `weekday()` function to extract the numerical representation of the day of the week (1-7, where 1 represents Sunday and 7 represents Saturday) and then applied the custom format `dddd` to display the day of the week in full text format (e.g., Sunday, Monday, etc.).
+5. **Create Day of the Week:** Utilized the `=weekday()` function to extract the numerical representation of the day of the week (1-7, where 1 represents Sunday and 7 represents Saturday) and then applied the custom format `dddd` to display the day of the week in full text format (e.g., Sunday, Monday, etc.).
 
-5. **Calculate Ride Length:** Created a new column labeled `ride_length` by calculating the duration of each ride. This was done by subtracting the `started_at` timestamp from the `ended_at` timestamp, representing the duration of the ride in hours, minutes, and seconds.
-
-6. **Time Format Adjustment:** Changed the time format in the `ride_length` column to `37:30:55` to make it more readable, displaying hours, minutes, and seconds.
-
-7. **Filter Out Short and Long Rides for Casual Riding:** Since casual rides should not be less than 1 minute or longer than 24 hours, filtered out any rides in the `ride_length` column that were less than 1 minute or exceeded 24 hours for casual riders.
+6. **Filter Out Short and Long Rides for Casual Riding:** Fileter any ride_length and remove negative values.
+7. **check for rideable types and remove any other types:** Filter out any rideable types that are not classic_bike, docked_bike, electric_bike.
+8. check for rider_type and remove any other types:\*\* Filter out any rider_type that are not casual, member.
 
 By completing these data cleaning steps, we have prepared the Cyclistic trip data for 2022 for further analysis, ensuring accuracy and consistency in the dataset.
 
-## Analyze
+## Analyze:
+
+we import all the 12 csv file to pgadmin and then we use sql to analyze the data.
+for sql code please refer to the sql file in the repository.
+
+### 1. What is the average ride length for casual riders and annual members?
 
 ...
 
