@@ -1,12 +1,9 @@
-# Google Data Analytics Capstone Project: Cyclistic
+# Google Data Analytics Capstone Project: Cyclistic using Excel, SQL, and Tableau.
 
 ## Introduction
 
-Demonstrated in this case study are the skills that I have learned in the Google Data Analytics Professional Certificate Course. I will use these skills to complete the tasks of a data analyst working for the fictional bike-share company Cyclistic. Following the data analysis process of Ask, Prepare, Process, Analyze, Share, and Act. I will be able to answer the question of how casual riders and annual members use Cyclistic bikes differently.
-
-## Scenario
-
-The Cyclistic Director of Marketing, Lily Moreno, believes the company's future success depends on maximizing the number of annual memberships. Therefore, my team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, my team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve our recommendations, so they must be backed up with compelling data insights and professional data visualizations.
+For The Google Data Analytics Capstone Project, I will be working with Cyclistic, a fictional bike-share company in Chicago. I will be acting as a junior data analyst working in the marketing analytics team. The director of marketing, Lily Moreno, believes the company’s future success depends on maximizing the number of annual memberships. Therefore, my project goal is to understand how annual members and casual riders use Cyclistic bikes differently. From these insights, I will design a marketing strategy that converts casual riders into annual members.
+using excel to clean the data and then import the data to pgadmin and use sql to analyze the data and then use tableau to create the dashboard and story.
 
 ## About the Company
 
@@ -24,12 +21,6 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 
 Analyze Cyclistic's 2022 trip data to understand how casual riders and annual members use bikes differently. why casual riders would buy a membership, and how digital media could affect their marketing tactics.
 Insights gained from this analysis will help the marketing team develop their strategies for the campaign.
-
-### Stakeholders
-
--   Lily Moreno: Director of Marketing. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. These may include email, social media, and other channels.
--   Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
--   Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
 
 ## Prepare
 
@@ -65,14 +56,58 @@ By completing these data cleaning steps, we have prepared the Cyclistic trip dat
 we import all the 12 csv file to pgadmin and then we use sql to analyze the data.
 for sql code please refer to the sql file in the repository.
 
-### 1. What is the average ride length for casual riders and annual members?
-
 ...
 
 ## Share
 
+For visualization, we have used Tableau to create an interactive dashboard and compelling story. Click [here](https://public.tableau.com/app/profile/safiullah.ahmadzai/viz/CyclisticDashboard_16903724263310/Cyclisticdashboard) to explore the current version of the dashboard and story. We are continuously working on enhancing the dashboard with more insights and data, so stay tuned for future updates.
+
 ...
 
 ## Act
+
+The analysis of Cyclistic bike-sharing data reveals valuable insights into rider behavior and preferences, providing actionable conclusions for enhancing the overall user experience and optimizing marketing strategies.
+
+## Differences between Annual Members and Casual Riders
+
+1. Casual riders tend to take longer rides on average (approximately 22 mins), using bikes for leisure and exploration.
+2. Annual members prefer shorter, more frequent rides (approximately 13 mins), likely for practical purposes like daily commuting or short trips.
+3. Annual members make more trips overall (3.3M) compared to casual riders (2.3M).
+
+## Seasonal Trends
+
+-   Both groups show peak activity in summer (July & August).
+-   Trip numbers decline in colder months (fall & winter).
+
+## Weekly Usage Patterns
+
+-   Weekdays observe higher trip numbers for both groups, indicating commuting.
+-   Saturdays are popular for casual riders, while members use bikes consistently on weekdays.
+
+## Peak Hours
+
+-   Late afternoon (around 5:00 PM) is preferred by both groups.
+-   Early morning (4:00 AM - 6:00 AM) sees fewer rides.
+
+## Conclusions and Recommendations
+
+### Membership Promotion
+
+-   Targeted promotions showcasing annual membership benefits, cost savings, and convenience can entice casual riders to become annual members.
+-   Exclusive features, like priority access, can further incentivize casual riders to upgrade their memberships.
+
+### Seasonal Campaigns
+
+-   Seasonal marketing campaigns, focusing on leisurely rides during summer and practical usage during colder months, can appeal to distinct rider preferences.
+
+### Weekday Strategies
+
+-   Optimize bike availability and station placement during peak weekdays to accommodate the commuting needs of both annual members and casual riders.
+-   Offer special promotions or events on Saturdays to attract more casual riders during weekends.
+
+### Enhancing User Experience
+
+-   Ensure bike availability and maintenance during peak hours, especially in the late afternoon, to improve user satisfaction.
+-   Implement incentives during off-peak hours to encourage bike usage and balance demand throughout the day.
 
 ...
