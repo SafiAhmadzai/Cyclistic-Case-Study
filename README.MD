@@ -54,15 +54,11 @@ By completing these data cleaning steps, we have prepared the Cyclistic trip dat
 ## Analyze:
 
 we import all the 12 csv file to pgadmin and then we use sql to analyze the data.
-for sql code please refer to the sql file in the repository.
-
-...
+for sql code please refer to the sql file in the repository click [here](https://github.com/SafiAhmadzai/Cyclistic-Case-Study/blob/main/Data%20Analysis.sql)
 
 ## Share
 
 For visualization, we have used Tableau to create an interactive dashboard and compelling story. Click [here](https://public.tableau.com/app/profile/safiullah.ahmadzai/viz/CyclisticDashboard_16903724263310/Cyclisticdashboard) to explore the current version of the dashboard and story. We are continuously working on enhancing the dashboard with more insights and data, so stay tuned for future updates.
-
-...
 
 ## Act
 
@@ -109,5 +105,3 @@ The analysis of Cyclistic bike-sharing data reveals valuable insights into rider
 
 -   Ensure bike availability and maintenance during peak hours, especially in the late afternoon, to improve user satisfaction.
 -   Implement incentives during off-peak hours to encourage bike usage and balance demand throughout the day.
-
-...
